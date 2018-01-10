@@ -1,0 +1,22 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "simple-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/simple/SimpleWebPart.js",
+          "manifest": "./src/webparts/simple/SimpleWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery":"node_modules/jquery/dist/jquery.min.js",
+    "jqueryui":"node_modules/jqueryui/jquery-ui.min.js",
+    "handlebars": "./node_modules/handlebars/dist/handlebars.amd.min.js"
+  },
+  "localizedResources": {
+    "SimpleWebPartStrings": "lib/webparts/simple/loc/{locale}.js"
+  }
+}
